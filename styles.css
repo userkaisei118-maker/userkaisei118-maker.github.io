@@ -1,8 +1,9 @@
 body {
-  font-family: system-ui, "Noto Sans JP", sans-serif;
+  font-family: "Noto Sans JP", system-ui, sans-serif;
   margin: 24px;
   color: #222;
-  background: #fff;
+  background: #f9fafc;
+  line-height: 1.7;
 }
 
 header {
@@ -13,18 +14,57 @@ header {
 
 h1 {
   margin: 0;
-  font-size: 1.6rem;
+  font-size: 1.8rem;
+  color: #2c3e50;
+}
+
+section h2 {
+  border-left: 4px solid #0366d6;
+  padding-left: 8px;
+  margin-top: 24px;
+  color: #2c3e50;
 }
 
 #works article {
   padding: 12px;
   border: 1px solid #f0f0f0;
   border-radius: 6px;
-  background: #fafafa;
+  background: #fff;
   margin-bottom: 12px;
+  transition: 0.3s;
+}
+
+#works article:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+#works img {
+  width: 100%;
+  border-radius: 6px;
+  margin-bottom: 8px;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+li {
+  background: #fff;
+  border: 1px solid #eee;
+  border-radius: 6px;
+  padding: 8px 12px;
+  margin-bottom: 8px;
 }
 
 a {
   color: #0366d6;
   text-decoration: none;
+}
+
+footer {
+  text-align: center;
+  margin-top: 40px;
+  color: #777;
 }
