@@ -1,49 +1,107 @@
-<!DOCTYPE html>
-<html lang="ja">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>海星ポートフォリオ | Web制作者</title>
-  <link rel="stylesheet" href="styles.css">
-</head>
-<body>
-  <header>
-    <img src="hero.jpg" alt="海星ポートフォリオメイン画像" class="hero">
-    <h1>海星ポートフォリオ</h1>
-    <p class="intro">
-      大学2年生のWeb制作者。WordPressとLP制作で中小事業者の集客を短納期で支援します。<br>
-      デザイン設計・SEO・レスポンシブ対応を得意とし、成果につながるサイト制作を行います。
-    </p>
-    <a href="mailto:user.kaisei118@gmail.com" class="cta">無料相談はこちら</a>
-  </header>
+body {
+  font-family: "Noto Sans JP", system-ui, sans-serif;
+  margin: 0;
+  color: #222;
+  background: #f9fafc;
+  line-height: 1.7;
+  animation: fadeIn 1s ease-in;
+}
 
-  <section id="works">
-    <h2>制作実績</h2>
-    <article>
-      <img src="project1.jpg" alt="美容室LP制作">
-      <h3>美容室LP制作</h3>
-      <p>WordPressで構築。予約率を30%改善し、ブランドイメージを刷新。</p>
-    </article>
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
 
-    <article>
-      <img src="project2.jpg" alt="カフェサイト制作">
-      <h3>カフェサイト制作</h3>
-      <p>温かみのあるデザインで来店率を向上。SNS連携機能を追加。</p>
-    </article>
-  </section>
+header {
+  text-align: center;
+  padding: 40px 20px;
+  background: linear-gradient(to bottom, #ffffff, #eef3f9);
+  border-bottom: 1px solid #ddd;
+}
 
-  <section id="services">
-    <h2>提供サービス</h2>
-    <ul>
-      <li>LP・コーポレートサイト制作（20万円〜）</li>
-      <li>WordPress構築・カスタマイズ</li>
-      <li>SEO・アクセス解析・改善提案</li>
-    </ul>
-  </section>
+.hero {
+  width: 100%;
+  border-radius: 8px;
+  margin-bottom: 20px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
 
-  <footer>
-    <p>Email: <a href="mailto:user.kaisei118@gmail.com">user.kaisei118@gmail.com</a></p>
-    <p>© 2026 Kaisei Portfolio | Designed & Built by 海星</p>
-  </footer>
-</body>
-</html>
+h1 {
+  font-size: 2rem;
+  color: #2c3e50;
+  margin-bottom: 8px;
+}
+
+.intro {
+  font-size: 1rem;
+  color: #555;
+  margin-bottom: 16px;
+}
+
+.cta {
+  display: inline-block;
+  background: #0366d6;
+  color: #fff;
+  padding: 10px 20px;
+  border-radius: 6px;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+.cta:hover {
+  background: #024ea2;
+}
+
+section {
+  max-width: 900px;
+  margin: 40px auto;
+  padding: 0 20px;
+}
+
+section h2 {
+  border-left: 4px solid #0366d6;
+  padding-left: 8px;
+  margin-bottom: 20px;
+  color: #2c3e50;
+}
+
+#works article {
+  padding: 12px;
+  border: 1px solid #f0f0f0;
+  border-radius: 6px;
+  background: #fff;
+  margin-bottom: 20px;
+  transition: 0.3s;
+}
+
+#works article:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+#works img {
+  width: 100%;
+  border-radius: 6px;
+  margin-bottom: 8px;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+li {
+  background: #fff;
+  border: 1px solid #eee;
+  border-radius: 6px;
+  padding: 8px 12px;
+  margin-bottom: 8px;
+}
+
+footer {
+  text-align: center;
+  margin-top: 40px;
+  padding: 20px;
+  color: #777;
+  background: #f1f3f6;
+}
